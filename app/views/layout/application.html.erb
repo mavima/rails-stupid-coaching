@@ -1,0 +1,20 @@
+<!-- <h1>Layout#application</h1>
+<p>Find me in app/views/layout/application.html.erb</p>
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stupid coach</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Stupid coaching</h1>
+    <%= yield %>
+    <p>my footer</p>
+  </body>
+</html>
